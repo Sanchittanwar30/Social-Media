@@ -1,8 +1,8 @@
-const Sidebar = ({ selTab }) => {
+const Sidebar = ({ selTab, setselTab }) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
-      style={{ width: "280px" }}
+      style={{ width: "180px" }}
     >
       <a
         href="/"
@@ -15,7 +15,12 @@ const Sidebar = ({ selTab }) => {
       </a>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
+        <li
+          className="nav-item "
+          onClick={() => {
+            setselTab("Home");
+          }}
+        >
           <a
             href="#"
             className={`nav-link text-white ${selTab === "Home" && "active"}`}
@@ -27,7 +32,11 @@ const Sidebar = ({ selTab }) => {
             Home
           </a>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            setselTab("Create Post");
+          }}
+        >
           <a
             href="#"
             className={`nav-link text-white ${
