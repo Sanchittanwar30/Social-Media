@@ -24,16 +24,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li>
-              <a href="#" className="nav-link px-2 text-white">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link px-2 text-white">
-                Pricing
-              </a>
-            </li>
+
             <li>
               <a href="#" className="nav-link px-2 text-white">
                 FAQs
